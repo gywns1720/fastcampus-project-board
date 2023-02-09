@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>User Postt</title>
+</head>
+<body>
+<h1>The form method="POST" Example </h1>
+<!-- _blank 새창 띄우기 -->
+<form action="/user" method="POST" target="_blank">
+  <label for="membername">Member Name:</label>
+  <input type="text" id="membername" name="userName"><br/><br/>
+  <label for="memberid">Member Id:</label>
+  <input type="text" id="memberid" name="userId"><br/><br/>
+  <label for="memberphone">Member Phone:</label>
+  <input type="text" id="memberphone" name="userPhone"><br/><br/>
+  <button type="submit">제출하기</button>
+</form>
+</body>
+</html>

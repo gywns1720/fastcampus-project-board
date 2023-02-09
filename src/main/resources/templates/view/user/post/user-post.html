@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>User Post</title>
+</head>
+<body>
+  <h1>Post 방식으로 전달된 값 출력 </h1>
+  <h2 th:text="${userName}">멤버 이름</h2>
+  <h2 th:text="${userId}">멤버 아이디</h2>
+  <h2 th:text="${userPhone}">멤버 폰</h2>
+  <h2>---------</h2>
+
+  <h2 th:text="${UserDto.getUserName()}">멤버 이름</h2>
+  <h2 th:text="${UserDto.getUserId()}">멤버 아이디</h2>
+  <h2 th:text="${UserDto.getUserPhone()}">멤버 폰</h2>
+<!-- th:text="userDTO.getUserId()"-->
+</body>
+</html>
